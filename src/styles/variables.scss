@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
 $margin: 3em;
 
 //Colors
 
 $White: #EEEEEE;
+$Grey: #636D7D;
+$LGrey: #7c8799;
 $DBlue: #222831;
 $Yellow: #FFD369;
+
+//Mixins
+
