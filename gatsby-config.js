@@ -1,6 +1,20 @@
 module.exports = {
   siteMetadata: {
     title: "Site",
+    links: {
+      Github: {
+        alt: 'Github Icon',
+        href: 'https://github.com/Tulioleal'
+      },
+      LinkedIn: {
+        alt: 'LinkedIn Icon',
+        href: 'https://www.linkedin.com/tulioleal/'
+      },
+      Whatsapp: {
+        alt: 'Whatsapp Icon',
+        href: 'https://api.whatsapp.com/send?phone=541124030848'
+      },
+    }
   },
   plugins: [
     "gatsby-plugin-sass",
