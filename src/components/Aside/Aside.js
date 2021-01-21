@@ -47,9 +47,9 @@ function Aside() {
                 <p>Fullstack web developer with an eye for good design</p>
             </div>
             <div className={Style.buttons}>
-                <button>About</button>
-                <button>Projects</button>
-                <button>Contact</button>
+                <a href='#About'>About</a>
+                <a href='#Project'>Projects</a>
+                <a href='#Contact'>Contact</a>
             </div>
             <div className={Style.icons}>
                 <SVG
