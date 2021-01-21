@@ -1,0 +1,66 @@
+@import'../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap');
+
+.container{
+    height: 100vh;
+    width: 25%;
+    background-color: $DBlue;
+    position: fixed;
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card{
+    margin: 5em $margin 0em 0em;
+    display: flex;
+    flex-direction: column;
+
+    img{
+        align-self: flex-end;
+        width: 15em;
+        clip-path: circle(40% at 45% 50%);
+    }
+    h2{
+        margin: .5em 0em;
+        font-size: 40px;
+        color: $Yellow  ;
+        text-align: right;
+    }
+    p{  
+        margin: 0em 0em 0em $margin;
+        font-weight: 600;
+        text-align: right;
+        align-self: flex-end;
+    }
+}
+
+.buttons{
+    height: 8.5em;
+    margin: 0em $margin 0em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    button{
+        font-weight: 600;
+        color: $White;
+        padding: 0.5em 1em;
+        border: 3px solid $Yellow;
+        cursor: pointer;
+        background-color: transparent;
+        align-self: flex-end;
+    }
+}
+
+.icons{
+    width: 50%;
+    margin-bottom: $margin;
+
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
