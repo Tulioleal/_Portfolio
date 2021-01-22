@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap');
 
-*{
-    font-family: 'Montserrat', sans-serif;
-}
-
 $margin: 3em;
 
 //Colors
@@ -16,3 +12,32 @@ $Yellow: #FFD369;
 
 //Mixins
 
+@mixin img ($url) {
+    min-height: calc(100vh - 6em);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url($url);
+}
+
+//KeyFrames
+
+@keyframes fadeInOut {
+
+    0% {
+        opacity: 0;
+        transition: scale3d(.5,.5,1);
+    }
+
+    75% {
+        opacity: 0;
+        transition: scale3d(.75,.75,1);
+    }
+
+    100% {
+        opacity: 1;
+        transition: scale3d(1,1,1);
+    }
+}

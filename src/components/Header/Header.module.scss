@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.img1{
+    @include img('../../images/pexels-jose-esquivel-5758044.jpg');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1, h2{
+        padding-top: 0em;
+        margin-bottom: .2em;
+    }
+
+    h3{
+        margin: .2em;
+        font-weight: 600;
+
+        &:nth-child(5){
+            
+            font-weight: 800;
+        }
+    }
+
+}

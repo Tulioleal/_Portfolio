@@ -1,110 +1,62 @@
 @import'.././styles/variables.scss';
 
-@mixin img ($url) {
-    min-height: 100vh;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url($url);
-}
-
 @mixin content ($height) {
     min-height: $height;
     background-color: $Grey;
 }
 
-.container{
+.container {
     margin-left: 25%;
     width: 100%;
 
-    
-    .img1{
-        @include img('../images/pexels-jose-esquivel-5758044.jpg');
-        background-position: right;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h1,h2,h3{
-            color: $Yellow;
-        }
-
-        h1,h2{
-            margin-top: 0em;
-        }
-
-        h1{
-            margin-bottom: .2em;
-            font-size: 5em;
-        }
-
-        h2{
-            font-size: 3em; 
-        }
-        h3{
-            font-size: 1.5em;
-            margin: .2em;
-            font-weight: 600;
-
-            &:nth-child(5){
-                
-                font-weight: 800;
-            }
-        }
-
+    .main,
+    .img2,
+    .contact {
+        padding: 3em 7em;
     }
 
-    .main{
-        padding: 4em 0em;
+    .main {
         @include content(120vh);
-
         background: linear-gradient(180deg, $Grey 0%, $LGrey 90%);
 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
-        .about{
+
+        .about {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            
-            h2{
-                font-size: 2em;
-                color: $Yellow;
+
+            h2 {
                 text-align: center;
+                padding: 1em 0em;
             }
-            p{
+
+            p {
                 font-size: 1.4em;
                 text-align: center;
-                width: 60%;
+                width: 70%;
                 align-self: center
             }
         }
 
-        .skills{
-
-        }
+        .skills {}
     }
 
-    .img2{
+    .img2 {
         @include img('../images/pexels-fernando-dos-santos-campos-2510245.jpg');
         opacity: 90%;
         display: flex;
+        flex-direction: column;
         justify-content: flex-start;
-        padding: 3em 7em;
+        height: auto;
 
-        Project{
-
-        }
     }
 
-    .contact{
-        @include content(100vh);
+    .contact {
         background: linear-gradient(180deg, $LGrey 0%, $Grey 90%);
+        @include content( fit-content );
+        padding-bottom: 6em;
     }
 }

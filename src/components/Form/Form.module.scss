@@ -1,0 +1,83 @@
+@import'../../styles/variables.scss';
+
+h2{
+    padding-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+
+    padding-top: 3em;
+
+    display: flex;
+    justify-content: space-between;
+
+    form{
+        width: calc(60%) ;
+        align-self: center;
+
+        .div{
+            width: 100%;
+            height: 4em;
+
+            display: flex;
+            justify-content: space-between;
+
+            input{
+                padding: 5px 0px 5px 15px;
+                width: 46%;
+                height: 75%;
+            }
+        }
+
+        input,textarea,button{
+            color: $DBlue;
+            font-weight: 600;
+            box-sizing: border-box;
+            border-radius: 1em;
+            border: none;
+
+            &[type=text]:focus, &:focus {
+                outline: none;
+            }
+        }
+
+        textarea{
+            padding: 10px 15px;
+            margin-top: 1em;
+            width: 100%;
+        }
+
+        button{
+            font-size: 1em;
+            font-weight: 600;
+            background-color: $Yellow;
+            margin-top: 1em;
+            padding: .7em 1em;
+            float: right;
+            cursor: pointer;
+        }
+    }
+
+    .info{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        .dir,.email{
+            display: flex;
+            justify-content: space-between;
+
+            p{
+                font-weight: 600;
+                width: 75%;
+                margin-left: 1em ;
+            }
+        }
+    }
+}

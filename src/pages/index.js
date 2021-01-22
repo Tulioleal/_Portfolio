@@ -3,6 +3,10 @@ import Style from './index.module.scss'
 
 import Project from '../components/Project/Project'
 import Layout from '../components/Layout/Layout'
+import Header from '../components/Header/Header'
+import Form from '../components/Form/Form'
+
+import image from '../images/pexels-picography-4776.jpg'
 
 function Home() {
 
@@ -10,13 +14,9 @@ function Home() {
     <>
       <Layout className={Style.Layout}>
         <div className={Style.container}>
-          <div className={Style.img1}>
-            <h1>Welcome!</h1>
-            <h2>I'm Tulio</h2>
-            <h3>Engineer</h3>
-            <h3>Developer</h3>
-            <h3>CODER</h3>
-          </div>
+          
+          <Header />
+
           <main className={Style.main} id='About'>
             <section className={Style.about}>
 
@@ -32,9 +32,22 @@ function Home() {
           </main>
 
           <div className={Style.img2}>
-            <Project img='../images/pexels-fernando-dos-santos-campos-2510245.jpg'/>
+
+            <Project
+              src={image}
+            />
+            <Project
+              src={image}
+            />
+            <Project
+              src={image}
+            />
+
           </div>
-          <div className={Style.contact}></div>
+          
+          <div className={Style.contact}>
+            <Form />
+          </div>
         </div>
       </Layout>
     </>
