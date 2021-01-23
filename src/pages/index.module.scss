@@ -3,6 +3,8 @@
 @mixin content ($height) {
     min-height: $height;
     background-color: $Grey;
+    box-shadow: 0 0 20px #333;
+    z-index: 1;
 }
 
 .container {
@@ -18,39 +20,15 @@
     .main {
         @include content(120vh);
         background: linear-gradient(180deg, $Grey 0%, $LGrey 90%);
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        .about {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-
-            h2 {
-                text-align: center;
-                padding: 1em 0em;
-            }
-
-            p {
-                font-size: 1.4em;
-                text-align: center;
-                width: 70%;
-                align-self: center
-            }
-        }
-
-        .skills {}
     }
 
     .img2 {
         @include img('../images/pexels-fernando-dos-santos-campos-2510245.jpg');
+        height: auto;
         opacity: 90%;
         display: flex;
-        flex-direction: column;
         justify-content: flex-start;
-        height: auto;
+        flex-direction: column;
 
     }
 
