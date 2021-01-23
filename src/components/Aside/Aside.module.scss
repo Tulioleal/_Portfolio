@@ -13,7 +13,7 @@
 }
 
 .card{
-    margin: 5em $margin 0em 0em;
+    margin: 3em $margin 0em 0em;
     display: flex;
     flex-direction: column;
 
@@ -23,7 +23,7 @@
         clip-path: circle(40% at 45% 50%);
     }
     h2{
-        margin: .5em 0em;
+        margin-bottom: .5em;
         font-size: 40px;
         color: $Yellow  ;
         text-align: right;
@@ -37,8 +37,9 @@
 }
 
 .buttons{
-    height: 8.5em;
+    height: 9em;
     margin: 0em $margin 0em 0em;
+    border: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -58,9 +59,13 @@
 
 .icons{
     width: 50%;
-    margin-bottom: $margin;
+    margin-bottom: 2em;
 
     align-self: center;
     display: flex;
     justify-content: space-between;
+    
+    .svg{
+        cursor: pointer;
+    }
 }

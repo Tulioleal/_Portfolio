@@ -39,6 +39,7 @@ h2{
             box-sizing: border-box;
             border-radius: 1em;
             border: none;
+            cursor: text;
 
             &[type=text]:focus, &:focus {
                 outline: none;
