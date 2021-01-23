@@ -1,0 +1,91 @@
+@import '../../styles/variables.scss';
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    p {
+        font-size: 1.4em;
+        text-align: center;
+        line-height: 1.7em;
+        width: 75%;
+        align-self: center
+    }
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3em 0em;
+
+    h4{
+        margin: 0em;
+    }
+
+    .bars{
+        width: 75%;
+        height: 20em;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .bar{
+            z-index: 4;
+            height: 3em;
+            color: $DBlue;
+            border: 3px solid $DBlue;
+            position: relative;
+
+            display: flex;
+            align-items: center;
+
+            h4{
+                z-index: 4;
+                width: fit-content;
+                padding: .5em 0em .5em 1em;
+            }
+
+            &::before{
+                content: "";
+                z-index: -1;
+                position: absolute;
+                height: calc(3em + 2px);
+                background-color: $Yellow;
+            }
+        }
+    }
+
+    .html{
+        @extend .bar;
+        &::before{
+            width: 80%;
+        }
+    }
+    .css{
+        @extend .bar;
+        &::before{
+            width: 90%;
+        }
+    }
+    .js{
+        @extend .bar;
+        &::before{
+            width: 75%;
+        }
+    }
+    .ndjs{
+        @extend .bar;
+        &::before{
+            width: 65%;
+        }
+    }
+    .react{
+        @extend .bar;
+        &::before{
+            width: 70%;
+        }
+    }
+}
