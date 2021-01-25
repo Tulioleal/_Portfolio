@@ -3,10 +3,38 @@ import Fade from 'react-reveal/Fade'
 import Style from './About.module.scss'
 
 const Bar = (props) => (
-  <div className={props.style}>
-    <h4>{props.title}</h4>
-  </div>
+  <Fade>
+    <div className={props.style}>
+      <div className={Style.progress}>
+        <h4>{props.title}</h4>
+      </div>
+    </div>
+  </Fade>
 )
+
+/* const appearOptions = {
+
+} 
+
+const appearOnScroll = new IntersectionObserver (
+  function (
+    entries,
+    appearOnScroll
+  ) {
+    entries.forEach( entry => {
+      if(!entry.isIntersecting){
+        return
+      } else {
+        entry.target.classList.add("appear")
+        appearOnScroll.unobserve(entry.target)
+      }
+    } )
+  },
+appearOptions)
+
+faders.forEach(fader=>{
+  appearOnScroll.observe(fader)
+}) */
 
 function About() {
     return (
@@ -17,7 +45,11 @@ function About() {
                 <h2>Hi There</h2>
               </Fade>
               <Fade bottom delay={500}>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias necessitatibus cum, architecto esse fugiat qui eveniet? Nam deleniti inventore, modi corrupti iusto eum mollitia labore? Vel, eaque dolore id, provident distinctio voluptas doloremque et non eligendi commodi numquam ipsa voluptates mollitia? Adipisci a dolor ratione sint obcaecati, quia voluptates provident.</p>
+                <p>
+                  Started learning about HTML, CSS and Javascript out of curiosity a and way to enter in the job market, but i discovered my passion in Web developmet.<br/>
+                  I'm a Venezuelan Industrial Engineer living in Buenos Aires since 2019, in early 2020 my journey as a web developer began, from that day on, i've never stoped learning.<br/>
+                  I love simple, clean and effective UI.
+                </p>
               </Fade>
 
             </section>
@@ -27,10 +59,9 @@ function About() {
                 <Fade>
                   <h2>Skills</h2>
                 </Fade>
-                
-                <Fade left>
 
-                  <div className={Style.bars}>
+                <div className={Style.bars}>
+
                     <Bar
                       title='HTML'
                       style={Style.html}
@@ -52,8 +83,6 @@ function About() {
                       style={Style.react}
                       />
                   </div>
-
-                </Fade>
 
             </section>
         </>

@@ -8,84 +8,81 @@
     p {
         font-size: 1.4em;
         text-align: center;
-        line-height: 1.7em;
+        line-height: 1.8em;
         width: 75%;
         align-self: center
     }
 }
 
-.skills{
+.skills {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 3em 0em;
 
-    h4{
+    h4 {
         margin: 0em;
     }
 
-    .bars{
+    .bars {
         width: 75%;
-        height: 20em;
+        margin-top: 1em;
         align-self: center;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
 
-        .bar{
+        .bar {
             z-index: 4;
-            height: 3em;
-            color: $DBlue;
-            border: 3px solid $DBlue;
             position: relative;
+            color: $DBlue;
+            height: 3em;
+            margin-bottom: calc(1em + 6px);
+            border: 3px solid $DBlue;
 
             display: flex;
             align-items: center;
 
-            h4{
+            h4 {
                 z-index: 4;
                 width: fit-content;
                 padding: .5em 0em .5em 1em;
             }
 
-            &::before{
-                content: "";
+            .progress {
                 z-index: -1;
-                position: absolute;
                 height: calc(3em + 2px);
                 background-color: $Yellow;
             }
         }
     }
 
-    .html{
-        @extend .bar;
-        &::before{
-            width: 80%;
+    $menu-items:
+        (html, 80%),
+        (css, 90%),
+        (js 75%),
+        (ndjs, 65%),
+        (react, 70%);
+
+    @each $id, $width in $menu-items {
+
+        @keyframes width-#{$id} {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: $width;
+            }
         }
-    }
-    .css{
-        @extend .bar;
-        &::before{
-            width: 90%;
-        }
-    }
-    .js{
-        @extend .bar;
-        &::before{
-            width: 75%;
-        }
-    }
-    .ndjs{
-        @extend .bar;
-        &::before{
-            width: 65%;
-        }
-    }
-    .react{
-        @extend .bar;
-        &::before{
-            width: 70%;
+
+        .#{$id} {
+            @extend .bar;
+
+            .progress {
+                width: $width;
+                animation: width-#{$id} 1.2s ease-out forwards;
+            }
         }
     }
 }
