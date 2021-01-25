@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from "gatsby"
 import Style from './Aside.module.scss'
-import Img from '../../images/IMG_20210116_170555.jpg'
+import Img from '../../images/IMG_20210124_181009.jpg'
 import Github from '../../images/Github.svg'
 import LinkedIn from '../../images/LinkedIn.svg'
 import Whatsapp from '../../images/Whatsapp.svg'

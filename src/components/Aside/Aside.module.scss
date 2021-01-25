@@ -19,10 +19,11 @@
 
     img{
         align-self: flex-end;
-        width: 15em;
-        clip-path: circle(40% at 45% 50%);
+        width: 13em;
+        clip-path: circle(42% at 50% 50%);
     }
     h2{
+        padding-top: 0em;
         margin-bottom: .5em;
         font-size: 40px;
         color: $Yellow  ;
