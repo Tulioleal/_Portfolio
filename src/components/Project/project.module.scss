@@ -21,6 +21,7 @@
         border-radius: 1em;
         align-self: center;
         transition: .55s all ease-out;
+        cursor: pointer;
         
         &:hover{
             height: 13em;
@@ -45,7 +46,7 @@
         }
 
         p{
-            animation: fadeInOut 1.25s cubic-bezier(.39, -1.05, 0.58, 1.95);
+            animation: fadeInOut 1s cubic-bezier(.39, -1.05, 0.58, 1.95);
 
             text-align: right;
             color: $White;

@@ -5,10 +5,13 @@ function Project( props ) {
     return (
 
         <div className={Style.card}>
-            <img src={props.src} alt=""/>
+            <a href={props.href}>
+                <img src={props.src} alt=""/>
+            </a>
+
             <section >
-                <h3>Project</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error molestias quo sunt itaque voluptatibus culpa inventore iusto illo repellat eveniet.</p>
+                <h3>{props.title}</h3>
+                <p>{props.content}</p>
             </section>
         </div>
     )
