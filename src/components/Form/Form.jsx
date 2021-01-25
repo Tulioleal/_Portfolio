@@ -11,15 +11,30 @@ function Form() {
             <h2>Contact me</h2>
 
             <div className={Style.container}>
-                <form>
+                <form method='post' action="https://getform.io/f/6d2b6ff7-c15f-41c4-9a3e-890141963819">
                     <div className={Style.div}>
-                        <input type="text" placeholder='Name'/>
-                        <input type="text" placeholder='Apellido'/>
+                        <input
+                            type="text"
+                            placeholder='Name'
+                            name='name'
+                            id='name'
+                        />
+                        <input
+                            type="text"
+                            placeholder='Last name'
+                            name='last'
+                            id='last'
+                        />
                     </div>
 
-                    <textarea cols="30" rows="10" placeholder='Your Message'></textarea>
+                    <input
+                        type='text'
+                        placeholder='Your Message'
+                        name="message"
+                        id={Style.message}
+                    />
 
-                    <button>Send</button>
+                    <button type="submit">Send</button>
                 </form>
 
                 <div className={Style.info}>

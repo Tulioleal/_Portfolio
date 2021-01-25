@@ -46,10 +46,12 @@ h2{
             }
         }
 
-        textarea{
+        #message{
+            font-size: 1em;
+            height: 15em;
+            width: 100%;    
             padding: 10px 15px;
             margin-top: 1em;
-            width: 100%;
         }
 
         button{
