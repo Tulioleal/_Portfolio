@@ -9,7 +9,7 @@ import Form from '../components/Form/Form'
 
 import Fade from 'react-reveal/Fade'
 
-import image from '../images/pexels-picography-4776.jpg'
+import image from '../images/Home1-min.jpg'
 
 function Home() {
 
@@ -28,13 +28,10 @@ function Home() {
 
             <Fade >
               <Project
+                href='https://consultorioapp.herokuapp.com'
                 src={image}
-              />
-              <Project
-                src={image}
-              />
-              <Project
-                src={image}
+                title='ConsultorioApp'
+                content=''
               />
             </Fade>
 
