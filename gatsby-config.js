@@ -1,6 +1,5 @@
 module.exports = {
   siteMetadata: {
-    title: "Site",
     links: {
       Github: {
         alt: 'Github Icon',
@@ -14,6 +13,19 @@ module.exports = {
         alt: 'Whatsapp Icon',
         href: 'https://api.whatsapp.com/send?phone=541124030848'
       },
+      Mail: {
+        mailTo: 'mailto:tuliolealdev@gmail.com',
+        copy: 'Mail to tuliolealdev@gmail.com',
+        back: "https://getform.io/f/6d2b6ff7-c15f-41c4-9a3e-890141963819",
+      }
+    },
+    Projects: {
+      Consul : {
+        href: 'https://consultorioapp.herokuapp.com',
+        repo: 'https://github.com/Tulioleal/_AppConsultorio',
+        title: 'ConsultorioApp',
+        content: 'A Single-page application created in 2020, focused in simplicity, developed as a tool for medical history and consultation of gynecologic and obstetric patients.',
+      }
     }
   },
   plugins: [
