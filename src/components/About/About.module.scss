@@ -1,6 +1,13 @@
 @import '../../styles/variables.scss';
 
+main{
+    @include margin();
+    @include content(fit-content);
+    background: linear-gradient(180deg, $Grey 0%, $LGrey 90%);
+}
+
 .about {
+    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -8,7 +15,6 @@
     p {
         font-size: 1.4em;
         text-align: center;
-        line-height: 1.8em;
         width: 75%;
         align-self: center
     }
@@ -46,12 +52,12 @@
             h4 {
                 z-index: 4;
                 width: fit-content;
-                padding: .5em 0em .5em 1em;
+                padding: 1em 0em .5em 1em;
             }
 
             .progress {
                 z-index: -1;
-                height: calc(3em + 2px);
+                height: 3em;
                 background-color: $Yellow;
             }
         }
@@ -83,6 +89,27 @@
                 width: $width;
                 animation: width-#{$id} 1.2s ease-out forwards;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px){
+
+    .about{
+        p{
+            width: 100%;
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    
+    .skills{
+        
+        .bars {
+            width: 95%;
         }
     }
 }

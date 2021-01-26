@@ -12,6 +12,16 @@ $Yellow: #FFD369;
 
 //Mixins
 
+@mixin margin {
+    padding: 3em 7em;
+    @media screen and ( max-width: 1050px){
+        padding: 3em 4.5em;
+    }
+    @media screen and ( max-width: 440px){
+        padding: 3em;
+    }
+}
+
 @mixin img ($url) {
     min-height: calc(100vh - 6em);
     position: relative;
@@ -20,6 +30,13 @@ $Yellow: #FFD369;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url($url);
+}
+
+@mixin content ($height) {
+    min-height: $height;
+    background-color: $Grey;
+    box-shadow: 0 0 20px #333;
+    z-index: 1;
 }
 
 //KeyFrames

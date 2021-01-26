@@ -3,3 +3,12 @@
     justify-content: space-between;
 
 }
+
+@media screen and (max-width: 860px) {
+    .container{
+
+        .aside{
+            display: none;
+        }
+    }
+}

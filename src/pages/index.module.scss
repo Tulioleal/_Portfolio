@@ -1,40 +1,11 @@
-@import'.././styles/variables.scss';
-
-@mixin content ($height) {
-    min-height: $height;
-    background-color: $Grey;
-    box-shadow: 0 0 20px #333;
-    z-index: 1;
-}
-
 .container {
     margin-left: 25%;
     width: 100%;
+}
 
-    .main,
-    .img2,
-    .contact {
-        padding: 3em 7em;
-    }
+@media screen and (max-width: 860px) {
 
-    .main {
-        @include content(120vh);
-        background: linear-gradient(180deg, $Grey 0%, $LGrey 90%);
-    }
-
-    .img2 {
-        @include img('../images/pexels-fernando-dos-santos-campos-2510245.jpg');
-        height: auto;
-        opacity: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-
-    }
-
-    .contact {
-        background: linear-gradient(180deg, $LGrey 0%, $Grey 90%);
-        @include content( fit-content );
-        padding-bottom: 6em;
+    .container{
+        margin-left: 0em;
     }
 }

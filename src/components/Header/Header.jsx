@@ -6,7 +6,7 @@ function Header() {
     
     return (
         <>
-            <div className={Style.img1}>
+            <header className={Style.img1}>
                <Fade top cascade delay={800}>
                    <div>
                         <h1>Welcome!</h1>
@@ -16,7 +16,7 @@ function Header() {
                         <h3>CODER</h3>
                    </div>
                 </Fade>
-            </div>
+            </header>
         </>
     )
 }

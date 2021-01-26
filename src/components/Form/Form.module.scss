@@ -1,85 +1,162 @@
 @import'../../styles/variables.scss';
 
-h2{
-    padding-top: 1em;
-    margin-bottom: 1em;
-    text-align: center;
-}
+.footer {
+    background: linear-gradient(180deg, $LGrey 0%, $Grey 90%);
+    @include content(fit-content);
+    padding-bottom: 6em;
+    @include margin();
 
-.container{
-    height: 100%;
-    width: 100%;
-
-    padding-top: 3em;
-
-    display: flex;
-    justify-content: space-between;
-
-    form{
-        width: calc(60%) ;
-        align-self: center;
-
-        .div{
-            width: 100%;
-            height: 4em;
-
-            display: flex;
-            justify-content: space-between;
-
-            input{
-                padding: 5px 0px 5px 15px;
-                width: 46%;
-                height: 75%;
-            }
-        }
-
-        input,textarea,button{
-            color: $DBlue;
-            font-weight: 600;
-            box-sizing: border-box;
-            border-radius: 1em;
-            border: none;
-            cursor: text;
-
-            &[type=text]:focus, &:focus {
-                outline: none;
-            }
-        }
-
-        #message{
-            font-size: 1em;
-            height: 15em;
-            width: 100%;    
-            padding: 10px 15px;
-            margin-top: 1em;
-        }
-
-        button{
-            font-size: 1em;
-            font-weight: 600;
-            background-color: $Yellow;
-            margin-top: 1em;
-            padding: .7em 1em;
-            float: right;
-            cursor: pointer;
-        }
+    h2 {
+        padding-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
     }
 
-    .info{
-        width: 33%;
+    .container {
+        height: 100%;
+        width: 100%;
+
+        padding-top: 3em;
+
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
+        justify-content: space-between;
 
-        .dir,.email{
-            display: flex;
-            justify-content: space-between;
+        form {
+            width: 60%;
+            align-self: center;
 
-            p{
+            .div {
+                width: 100%;
+                height: 4em;
+
+                display: flex;
+                justify-content: space-between;
+
+                input {
+                    padding: 5px 0px 5px 15px;
+                    width: 46%;
+                    height: 75%;
+                }
+            }
+
+            input,
+            textarea,
+            button {
+                color: $DBlue;
                 font-weight: 600;
-                width: 75%;
-                margin-left: 1em ;
+                box-sizing: border-box;
+                border-radius: 1em;
+                border: none;
+                cursor: text;
+
+                &[type=text]:focus,
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            textarea {
+                font-size: 1em;
+                height: 15em;
+                width: 100%;
+                padding: 10px 15px;
+                margin-top: 1em;
+            }
+
+            button {
+                font-size: 1em;
+                font-weight: 600;
+                background-color: $Yellow;
+                margin-top: 1em;
+                padding: .7em 1em;
+                float: right;
+                cursor: pointer;
+            }
+        }
+
+        .info {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+
+            .dir,
+            .email {
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    font-weight: 600;
+                    width: 75%;
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .footer{
+        .container{
+            padding-top: 1em;
+            flex-direction: column;
+
+            form{
+                width: 100%;
+            }
+
+            .info{
+                margin-top: 1em;
+                flex-direction: row-reverse;
+                width: 100%;
+
+                .dir,.email{
+                    flex-direction: column;
+                    height: fit-content;
+                    width: 50%;
+                    align-self: flex-start;
+
+                    p{
+                        text-align: center;
+                        align-self: center;
+                        margin-left: 0em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    .footer{
+        h2{
+            padding-top: 0em;
+        }
+        .container{
+            form{
+                .div{
+                    height: 6em;
+                    flex-direction: column;
+
+                    input{
+                        width: 100%;
+                        height: 42%;
+                    }
+                }
+
+                button{
+                    margin: 5% 10%;
+                    width: 80%;
+                }
+            }
+            .info{
+                flex-direction: column;
+                .dir,.email{
+                    width: 100%;
+                }
             }
         }
     }

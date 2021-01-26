@@ -38,7 +38,7 @@ faders.forEach(fader=>{
 
 function About() {
     return (
-        <>
+        <main>
             <section className={Style.about}>
 
               <Fade top>
@@ -85,7 +85,7 @@ function About() {
                   </div>
 
             </section>
-        </>
+        </main>
     )
 }
 

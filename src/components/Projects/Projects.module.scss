@@ -1,0 +1,141 @@
+@import './../../styles/variables.scss';
+
+.img2 {
+    @include img('../../images/pexels-fernando-dos-santos-campos-2510245.jpg');
+    height: fit-content;
+    opacity: 90%;
+    @include margin();
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.card{
+    height: 15em;
+    width: 15em;
+    // margin: 1em;
+    border-radius: 1em;
+    background-color: $DBlue;
+    opacity: 95%;
+    box-shadow: 0 0 20px #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .55s all ease-out;
+
+    img{
+        width: 12em;
+        height: 12em;
+        border-radius: 1em;
+        align-self: center;
+        transition: .55s all ease-out;
+        cursor: pointer;
+        
+        &:hover{
+            height: 13em;
+            width: 13em;
+        }
+    }
+
+    section{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        display: none;
+        
+        
+        h3{
+            animation: fadeInOut 1s linear;
+
+            font-size: 1.5em;
+            text-align: right;
+            color: $Yellow;
+        }
+
+        p{
+            animation: fadeInOut 1.5s linear;
+
+            text-align: right;
+            color: $White;
+        }
+
+        .links{
+            animation: fadeInOut 1.5s linear;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-self: flex-end;
+            
+            a{
+                margin-left: 1em;
+                text-decoration: none;
+                color: $Yellow;
+                cursor: pointer;
+
+                &:hover{
+                    color: $Grey;
+                }
+            }
+        }
+    }
+
+    &:hover{
+        width: 100%;
+        justify-content: space-evenly;
+
+        section{
+            display: block;
+        }
+    }
+}
+
+@media screen and ( max-width: 1000px ){
+    p{
+        line-height: 1.2em;
+    }
+}
+
+@media screen and ( max-width: 900px ){
+    .card{
+        width: 100%;
+        justify-content: space-evenly;
+
+        section{
+            display: block;
+        }
+    }
+}
+
+@media screen and ( max-width: 600px ){
+    
+    .card{
+        height: auto;
+        min-width: 230px;
+
+        flex-direction: column;
+        padding: 1.5em 0em;
+
+        section{
+            padding-top: 1em;
+            width: 85%;
+
+            h3, p{
+                text-align: center;
+                margin: 0.5em 0em;
+            }
+            p{
+                margin-bottom: 1em;
+            }
+
+            .links{
+                justify-content: center;
+            }
+        }
+    
+    }
+}

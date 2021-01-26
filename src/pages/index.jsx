@@ -1,15 +1,14 @@
 import React from 'react'
 import Style from './index.module.scss'
 
-import Project from '../components/Project/Project'
 import Layout from '../components/Layout/Layout'
+import Aside from '../components/Aside/Aside'
 import Header from '../components/Header/Header'
 import About from '../components/About/About.jsx'
 import Form from '../components/Form/Form'
 
-import Fade from 'react-reveal/Fade'
 
-import image from '../images/Home1-min.jpg'
+import Projects from '../components/projects/projects'
 
 function Home() {
 
@@ -20,27 +19,20 @@ function Home() {
           
           <Header />
 
-          <main className={Style.main} id='about'>
-            <About />
-          </main>
+          <Aside />
 
-          <div className={Style.img2} id='projects'>
+          <div id="about">
+            <About/>
+          </div>
 
-            <Fade >
-              <Project
-                href='https://consultorioapp.herokuapp.com'
-                src={image}
-                title='ConsultorioApp'
-                content=''
-              />
-            </Fade>
+          <div id='projects'>
+
+            <Projects />
 
           </div>
           
-          <div className={Style.contact} id='contact'>
-            <Fade>
+          <div id='contact'>
               <Form />
-            </Fade>
           </div>
         </div>
       </Layout>
