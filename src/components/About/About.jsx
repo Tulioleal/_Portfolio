@@ -6,35 +6,11 @@ const Bar = (props) => (
   <Fade>
     <div className={props.style}>
       <div className={Style.progress}>
-        <h4>{props.title}</h4>
+        <p>{props.title}</p>
       </div>
     </div>
   </Fade>
 )
-
-/* const appearOptions = {
-
-} 
-
-const appearOnScroll = new IntersectionObserver (
-  function (
-    entries,
-    appearOnScroll
-  ) {
-    entries.forEach( entry => {
-      if(!entry.isIntersecting){
-        return
-      } else {
-        entry.target.classList.add("appear")
-        appearOnScroll.unobserve(entry.target)
-      }
-    } )
-  },
-appearOptions)
-
-faders.forEach(fader=>{
-  appearOnScroll.observe(fader)
-}) */
 
 function About() {
     return (

@@ -1,24 +1,26 @@
 @import './../../styles/variables.scss';
 
 .img2 {
-    @include img('../../images/pexels-fernando-dos-santos-campos-2510245.jpg');
     height: fit-content;
-    opacity: 90%;
+    @include img('../../images/pexels-fernando-dos-santos-campos-2510245.jpg');
     @include margin();
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
+    h2{
+        color: $DBlue;
+    }
+
 }
 
 .card{
     height: 15em;
     width: 15em;
-    // margin: 1em;
     border-radius: 1em;
     background-color: $DBlue;
-    opacity: 95%;
+    opacity: .9;
     box-shadow: 0 0 20px #333;
 
     display: flex;
@@ -27,13 +29,17 @@
 
     transition: .55s all ease-out;
 
+    a{
+        color: transparent;
+    }
+
     img{
         width: 12em;
-        height: 12em;
         border-radius: 1em;
         align-self: center;
         transition: .55s all ease-out;
         cursor: pointer;
+        opacity: 1;
         
         &:hover{
             height: 13em;

@@ -1,17 +1,17 @@
 import React from 'react'
-import { graphql, useStaticQuery } from "gatsby"
 import Style from './Projects.module.scss'
 import Consul from '../../images/Home1-min.jpg'
+import ProjectList from './ProjectList';
 
 import Fade from 'react-reveal/Fade'
-
 
 const Project = ( props ) => {
   return (
 
       <div className={Style.card}>
-          <a href={props.href}>
-              <img src={props.src} alt=""/>
+          <a href={props.href} >
+                <img src={props.src} alt={props.alt}/>
+                
           </a>
 
           <section >
@@ -28,36 +28,17 @@ const Project = ( props ) => {
 
 function Projects() {
 
-/*      const data = useStaticQuery(
-        graphql`
-        query Project {
-            site {
-              siteMetadata {
-                Projects {
-                  Consul {
-                    content
-                    href
-                    repo
-                    title
-                  }
-                }
-              }
-            }
-          }
-        `
-    ) */
-
-    // const { content, href, repo, title } = data.site.siteMetadata.Projects.Consul
-
     return (
         <div className={Style.img2}>
             <Fade >
+              <h2>Projects</h2>
               <Project
-                // href = {href}
-                // src = {Consul}
-                // repo = {repo}
-                // title = {title}
-                // content = {content}
+                href = {ProjectList.ConsultorioApp.href}
+                alt = {ProjectList.ConsultorioApp.title}
+                src = {Consul}
+                repo = {ProjectList.ConsultorioApp.repo}
+                title = {ProjectList.ConsultorioApp.title}
+                content = {ProjectList.ConsultorioApp.content}
               />
             </Fade>
         </div>

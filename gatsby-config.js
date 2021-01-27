@@ -1,5 +1,8 @@
 module.exports = {
   siteMetadata: {
+    description: `Tulio Leal's portfolo`,
+    author: `Tulio Leal`,
+    title: 'Tulio Leal, Web Developer',
     links: {
       Github: {
         alt: 'Github Icon',
@@ -19,14 +22,6 @@ module.exports = {
         back: "https://getform.io/f/6d2b6ff7-c15f-41c4-9a3e-890141963819",
       }
     },
-    Projects: {
-      Consul : {
-        href: 'https://consultorioapp.herokuapp.com',
-        repo: 'https://github.com/Tulioleal/_AppConsultorio',
-        title: 'ConsultorioApp',
-        content: 'A Single-page application created in 2020, focused in simplicity, developed as a tool for medical history and consultation of gynecologic and obstetric patients.',
-      }
-    }
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -41,5 +36,21 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Tulio Leal´s Portfolio`,
+        short_name: `Tulio's Site`,
+        start_url: `/`,
+        background_color: `#222831`,
+        theme_color: `#FFD369`,
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: `standalone`,
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
   ],
 };

@@ -41,25 +41,33 @@ function Form() {
                             action={data.site.siteMetadata.links.Mail.back}
                         >
                             <div className={Style.div}>
-                                <input
-                                    type="text"
-                                    placeholder='Name'
-                                    name='name'
-                                    id='name'
-                                />
-                                <input
-                                    type="text"
-                                    placeholder='Last name'
-                                    name='last'
-                                    id='last'
-                                />
+                                <label for='name'>
+                                    <input
+                                        type="text"
+                                        placeholder='Name'
+                                        name='name'
+                                        id='name'
+                                    />
+                                </label>
+                                <label for='last'>
+                                    <input
+                                        type="text"
+                                        placeholder='Last name'
+                                        name='last'
+                                        id='last'
+                                    />
+                                </label>
                             </div>
-                            <textarea
-                                type='text'
-                                placeholder='Your Message'
-                                name="message"
-                            >
-                            </textarea>
+
+                            <label for='message'>
+                                <textarea
+                                    type='text'
+                                    placeholder='Your Message'
+                                    name="message"
+                                        id='message'
+                                >
+                                </textarea>
+                            </label>
 
                             <button type="submit">Send</button>
                         </form>
@@ -68,6 +76,8 @@ function Form() {
                             <div className={Style.dir}>
                                 <SVG 
                                     src={Home}
+                                    href='#'
+                                    alt='Home'
                                 />
                                 <p>Villa Crespo, Buenos Aires, Argentina</p>
                             </div>

@@ -26,10 +26,6 @@ main{
     justify-content: space-evenly;
     padding: 3em 0em;
 
-    h4 {
-        margin: 0em;
-    }
-
     .bars {
         width: 75%;
         margin-top: 1em;
@@ -45,14 +41,15 @@ main{
             height: 3em;
             margin-bottom: calc(1em + 6px);
             border: 3px solid $DBlue;
-
             display: flex;
-            align-items: center;
 
-            h4 {
+
+            p {
+                font-weight: 800;
                 z-index: 4;
                 width: fit-content;
-                padding: 1em 0em .5em 1em;
+                margin: .6em;
+                align-self: center;
             }
 
             .progress {
