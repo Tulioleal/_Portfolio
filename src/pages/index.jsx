@@ -5,9 +5,11 @@ import Layout from '../components/Layout/Layout'
 import Aside from '../components/Aside/Aside'
 import Header from '../components/Header/Header'
 import About from '../components/About/About.jsx'
-import Projects from '../components/projects/projects.jsx'
+import Projects from '../components/Projects/Projects.jsx'
 import Form from '../components/Form/Form'
 import SEO from '../components/Seo/Seo'
+
+import { graphql } from 'gatsby';
 
 function Home({ data }) {
 
@@ -24,7 +26,7 @@ function Home({ data }) {
           
           <Aside />
 
-          <div id="about">
+          <div id='about'>
             <About/>
           </div>
 
