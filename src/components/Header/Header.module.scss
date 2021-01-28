@@ -1,30 +1,46 @@
 @import '../../styles/variables.scss';
 
-.img1{
-    @include img('../../images/pexels-jose-esquivel-5758044.jpg');
+.img1 {
+    @include img('../../images/header-desk.jpg');
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    h1, h2, h3{
+
+    h1,
+    h2,
+    h3 {
         padding-top: 0em;
         margin-bottom: .2em;
         text-align: center;
     }
 
-    h2{
+    h2 {
         animation-delay: 1s;
     }
 
-    h3{
+    h3 {
         margin: .2em;
         font-weight: 600;
         animation-delay: 2s;
 
-        &:nth-child(5){
+        &:nth-child(5) {
             animation-delay: 3s;
             font-weight: 800;
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .img1 {
+        background-image: url('../../images/header-tab.jpg');
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .img1 {
+        background-image: url('../../images/header-mob.jpg');
     }
 }

@@ -2,7 +2,7 @@
 
 .img2 {
     height: fit-content;
-    @include img('../../images/pexels-fernando-dos-santos-campos-2510245.jpg');
+    @include img('../../images/projects-desk.jpg');
     @include margin();
 
     display: flex;
@@ -117,6 +117,12 @@
     }
 }
 
+@media screen and ( max-width: 768px ){
+    .img2 {
+        background-image: url('../../images/projects-tab.jpg');
+    } 
+}
+
 @media screen and ( max-width: 600px ){
     
     .card{
@@ -143,5 +149,12 @@
             }
         }
     
+    }
+}
+
+@media screen and ( max-width: 425px ){
+
+    .img2 {
+        background-image: url('../../images/projects-mob.jpg');
     }
 }
