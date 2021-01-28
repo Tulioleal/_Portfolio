@@ -22,8 +22,8 @@ function About() {
               </Fade>
               <Fade bottom delay={500}>
                 <p>
-                  Started learning about HTML, CSS and Javascript out of curiosity a and way to enter in the job market, but i discovered my passion in Web developmet.<br/>
-                  I'm a Venezuelan Industrial Engineer living in Buenos Aires since 2019, in early 2020 my journey as a web developer began, from that day on, i've never stoped learning.<br/>
+                  Started learning about HTML, CSS and Javascript out of curiosity a and way to enter in the job market, but I discovered my passion in Web development.<br/>
+                  I'm a Venezuelan Industrial Engineer living in Buenos Aires since 2019, in early 2020 my journey as a web developer began, from that day on, i've never stopped learning.<br/>
                   I love simple, clean and effective UI.
                 </p>
               </Fade>
