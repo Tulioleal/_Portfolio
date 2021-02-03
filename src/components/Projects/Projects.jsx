@@ -1,6 +1,7 @@
 import React from 'react'
 import Style from './Projects.module.scss'
 import Consul from '../../images/Home1-min.jpg'
+import Splitter from '../../images/Splitter.png'
 import ProjectList from './ProjectList';
 
 import Fade from 'react-reveal/Fade'
@@ -39,6 +40,14 @@ function Projects() {
                 repo = {ProjectList.ConsultorioApp.repo}
                 title = {ProjectList.ConsultorioApp.title}
                 content = {ProjectList.ConsultorioApp.content}
+              />
+              <Project
+                href = {ProjectList.Splitter.href}
+                alt = {ProjectList.Splitter.title}
+                src = {Splitter}
+                repo = {ProjectList.Splitter.repo}
+                title = {ProjectList.Splitter.title}
+                content = {ProjectList.Splitter.content}
               />
             </Fade>
         </div>
