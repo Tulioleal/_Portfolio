@@ -10,7 +10,7 @@ module.exports = {
       },
       LinkedIn: {
         alt: 'LinkedIn Icon',
-        href: 'https://www.linkedin.com/tulioleal/'
+        href: 'https://www.linkedin.com/in/tulioleal/'
       },
       Whatsapp: {
         alt: 'Whatsapp Icon',
