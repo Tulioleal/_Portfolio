@@ -2,7 +2,7 @@ import React from 'react'
 import Style from './Projects.module.scss'
 import Consul from '../../images/Home1-min.jpg'
 import Splitter from '../../images/Splitter.png'
-import ProjectList from './ProjectList';
+import ProjectList from './ProjectList.json';
 
 import Fade from 'react-reveal/Fade'
 
@@ -10,17 +10,16 @@ const Project = ( props ) => {
   return (
 
       <div className={Style.card}>
-          <a href={props.href} >
-                <img src={props.src} alt={props.alt}/>
-                
+          <a href={props.href} target='_blank' rel="noreferrer" >
+                <img src={props.src} alt={props.alt}/> 
           </a>
 
           <section >
               <h3>{props.title}</h3>
               <p>{props.content}</p>
               <div className={Style.links}>
-                  <a href={props.href}>Site</a>
-                  <a href={props.repo}>Repo</a>
+                  <a href={props.href} target='_blank' rel="noreferrer">Site</a>
+                  <a href={props.repo} target='_blank' rel="noreferrer">Repo</a>
               </div>
           </section>
       </div>

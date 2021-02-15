@@ -76,7 +76,7 @@ function Form() {
                             <div className={Style.dir}>
                                 <SVG 
                                     src={Home}
-                                    href='#'
+                                    href='https://www.google.com/maps/d/u/0/viewer?msa=0&hl=es-419&ie=UTF8&t=m&ll=-34.59787734054651%2C-58.43832020703779&spn=0.021196%2C0.029569&z=15&source=embed&mid=1gOfeYaSUADZni8MKnCXYoZ2jhmU'
                                     alt='Home'
                                 />
                                 <p>Villa Crespo, Buenos Aires, Argentina</p>
