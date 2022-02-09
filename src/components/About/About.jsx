@@ -39,25 +39,21 @@ function About() {
                 <div className={Style.bars}>
 
                     <Bar
-                      title='HTML'
-                      style={Style.html}
-                      />
-                    <Bar
                       title='CSS'
                       style={Style.css}
-                      />
+                    />
                     <Bar
                       title='Javascript'
                       style={Style.js}
-                      />
+                    />
                     <Bar
                       title='NodeJs'
                       style={Style.ndjs}
-                      />
+                    />
                     <Bar
                       title='React'
                       style={Style.react}
-                      />
+                    />
                   </div>
 
             </section>
