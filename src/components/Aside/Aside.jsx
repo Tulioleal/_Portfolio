@@ -34,6 +34,10 @@ function Aside() {
         `
     )
 
+    const github = data.site.siteMetadata.links.Github
+    const linkedin = data.site.siteMetadata.links.LinkedIn
+    const whatsapp = data.site.siteMetadata.links.Whatsapp
+
     return (
         <div className={Style.container} >
             <div className={Style.card}>
@@ -49,18 +53,18 @@ function Aside() {
             <div className={Style.icons}>
                 <SVG
                     src={Github}
-                    alt={data.site.siteMetadata.links.Github.alt}
-                    href={data.site.siteMetadata.links.Github.href}
+                    alt={github.alt}
+                    href={github.href}
                 />
                 <SVG
                     src={LinkedIn}
-                    alt={data.site.siteMetadata.links.LinkedIn.alt}
-                    href={data.site.siteMetadata.links.LinkedIn.href}
+                    alt={linkedin.alt}
+                    href={linkedin.href}
                 />
                 <SVG
                     src={Whatsapp} 
-                    alt={data.site.siteMetadata.links.Whatsapp.alt}
-                    href={data.site.siteMetadata.links.Whatsapp.href}
+                    alt={whatsapp.alt}
+                    href={whatsapp.href}
                 />
             </div>
         </div>
