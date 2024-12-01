@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.module.scss'
+import  * as styles from './index.module.scss'
 
 import Layout from '../components/Layout/Layout'
 import Aside from '../components/Aside/Aside'
@@ -14,13 +14,12 @@ import { graphql } from 'gatsby';
 function Home({ data }) {
 
   return (
-    <>
       <Layout>
         <SEO
           title= 'Portfolio'
           description={data.site.siteMetadata.description}
         />
-        <div className="container">
+        <div className={styles.container}>
           
           <Header />
           
@@ -40,7 +39,6 @@ function Home({ data }) {
 
         </div>
       </Layout>
-    </>
   )
 }
 

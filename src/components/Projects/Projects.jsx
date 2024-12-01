@@ -1,12 +1,12 @@
 import React from 'react'
-import './Projects.module.scss'
+import * as styles from './Projects.module.scss'
 import ProjectList from './ProjectList';
 
 import Fade from 'react-reveal/Fade'
 
 const Project = ( props ) => {
   return (
-      <div className="card">
+      <div className={styles.card}>
           <a href={props.href} target='_blank' rel="noreferrer" >
                 <img src={props.src} alt={props.alt}/> 
           </a>
@@ -14,7 +14,7 @@ const Project = ( props ) => {
           <section >
               <h3>{props.title}</h3>
               <p>{props.content}</p>
-              <div className="links">
+              <div className={styles.links}>
 
                   { props.href && (
                     <a href={props.href} target='_blank' rel="noreferrer">Site</a>
@@ -35,7 +35,7 @@ const Project = ( props ) => {
 function Projects() {
 
     return (
-        <div className="img2">
+        <section className={styles.img2}>
             <Fade >
               <h2>Projects</h2>
 
@@ -53,7 +53,7 @@ function Projects() {
               }
 
             </Fade>
-        </div>
+        </section>
     )
 }
 

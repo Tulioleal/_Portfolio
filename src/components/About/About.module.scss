@@ -1,18 +1,9 @@
 @use '../../styles/variables.scss';
 
 main{
-    background: linear-gradient(180deg, #636D7D 0%, #7c8799 90%);
-    min-height: fit-content;
-    background-color: #636D7D;
-    box-shadow: 0 0 20px #333;
-    z-index: 1;
-    padding: 3em 7em;
-    @media screen and ( max-width: 1050px){
-        padding: 3em 4.5em;
-    }
-    @media screen and ( max-width: 440px){
-        padding: 3em;
-    }
+    //@include variables.margin();
+    @include variables.content(fit-content);
+    background: linear-gradient(180deg, variables.$Grey 0%, variables.$LGrey 90%);
 }
 
 .about {
@@ -46,10 +37,10 @@ main{
         .bar {
             z-index: 4;
             position: relative;
-            color: #222831;
+            color: variables.$DBlue;
             height: 3em;
             margin-bottom: calc(1em + 6px);
-            border: 3px solid #222831;
+            border: 3px solid variables.$DBlue;
             display: flex;
 
 
@@ -64,7 +55,7 @@ main{
             .progress {
                 z-index: -1;
                 height: 3em;
-                background-color: #FFD369;
+                background-color: variables.$Yellow;
             }
         }
     }
@@ -89,12 +80,12 @@ main{
         }
 
         .#{$id} {
-            @extend .bar;
-
+            
             .progress {
                 width: $width;
                 animation: width-#{$id} 1.2s ease-out forwards;
             }
+            @extend .bar;
         }
     }
 }

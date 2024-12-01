@@ -1,13 +1,12 @@
 import React from 'react'
-import './Header.module.scss'
+import * as styles from './Header.module.scss'
 import Fade from 'react-reveal/Fade';
 
 function Header() {
     
     return (
         <>
-            <header className="img1">
-                <img src="../../images/header-desk.jpg" alt="" />
+            <header className={styles.img1}>
                <Fade top cascade delay={800}>
                    <div>
                         <h1>Welcome!</h1>

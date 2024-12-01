@@ -1,15 +1,15 @@
 import React from 'react'
 import Aside from '../Aside/Aside'
-import './Layout.module.scss'
+import * as styles from './Layout.module.scss'
 
 function Layout({ children }) {
     return (
-        <div className="container">
-            <div className="aside">
+        <main className={styles.container}>
+            <div className={styles.aside}>
                 <Aside />
             </div>
             {children}
-        </div>
+        </main>
     )
 }
 
