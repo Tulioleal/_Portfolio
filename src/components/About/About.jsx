@@ -1,11 +1,11 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
-import Style from './About.module.scss'
+import './About.module.scss'
 
 const Bar = (props) => (
   <Fade>
     <div className={props.style}>
-      <div className={Style.progress}>
+      <div className="progress">
         <p>{props.title}</p>
       </div>
     </div>
@@ -15,7 +15,7 @@ const Bar = (props) => (
 function About() {
     return (
         <main>
-            <section className={Style.about}>
+            <section className="about">
 
               <Fade top>
                 <h2>Hi There</h2>
@@ -30,29 +30,29 @@ function About() {
 
             </section>
 
-            <section className={Style.skills}>
+            <section className="skills">
 
                 <Fade>
                   <h2>Skills</h2>
                 </Fade>
 
-                <div className={Style.bars}>
+                <div className="bars">
 
                     <Bar
                       title='CSS'
-                      style={Style.css}
+                      style="css"
                     />
                     <Bar
                       title='Javascript'
-                      style={Style.js}
+                      style="js"
                     />
                     <Bar
                       title='NodeJs'
-                      style={Style.ndjs}
+                      style="ndjs"
                     />
                     <Bar
                       title='React'
-                      style={Style.react}
+                      style="react"
                     />
                   </div>
 

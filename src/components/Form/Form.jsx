@@ -1,5 +1,5 @@
 import React from 'react'
-import Style from './Form.module.scss'
+import './Form.module.scss'
 import SVG from '../SVG/svg'
 import Fade from 'react-reveal/Fade'
 
@@ -30,17 +30,17 @@ function Form() {
 
     return (
         <>
-            <footer className={Style.footer}>
+            <footer className="footer">
 
                 <Fade>
                     <h2>Contact me</h2>
 
-                    <div className={Style.container}>
+                    <div className="container">
                         <form
                             method='post'
                             action={data.site.siteMetadata.links.Mail.back}
                         >
-                            <div className={Style.div}>
+                            <div className="div">
                                 <label for='name'>
                                     <input
                                         type="text"
@@ -72,8 +72,8 @@ function Form() {
                             <button type="submit">Send</button>
                         </form>
 
-                        <div className={Style.info}>
-                            <div className={Style.dir}>
+                        <div className="info">
+                            <div className="dir">
                                 <SVG 
                                     src={Home}
                                     href='https://www.google.com/maps/d/u/0/viewer?msa=0&hl=es-419&ie=UTF8&t=m&ll=-34.59787734054651%2C-58.43832020703779&spn=0.021196%2C0.029569&z=15&source=embed&mid=1gOfeYaSUADZni8MKnCXYoZ2jhmU'
@@ -81,7 +81,7 @@ function Form() {
                                 />
                                 <p>Villa Crespo, Buenos Aires, Argentina</p>
                             </div>
-                            <div className={Style.email}>
+                            <div className="email">
                                 <SVG 
                                     href={data.site.siteMetadata.links.Mail.mailTo}
                                     src={Mail}

@@ -1,9 +1,9 @@
-@import'../../styles/variables.scss';
+@use '../../styles/variables.scss';
 
 .container {
     height: 100vh;
     width: 25%;
-    background-color: $DBlue;
+    background-color: variables.$DBlue;
     position: fixed;
 
     display: flex;
@@ -14,7 +14,7 @@
 
 .card,
 .buttons {
-    margin-right: $margin;
+    margin-right: variables.$margin;
 }
 
 .card {
@@ -31,7 +31,7 @@
         padding-top: 0em;
         margin-bottom: 1vh;
         font-size: 2.5em;
-        color: $Yellow;
+        color: variables.$Yellow;
         text-align: right;
     }
 
@@ -55,9 +55,9 @@
     a {
         text-decoration: none;
         font-weight: 600;
-        color: $White;
+        color: variables.$White;
         padding: 0.5em 1em;
-        border: 3px solid $Yellow;
+        border: 3px solid variables.$Yellow;
         cursor: pointer;
         background-color: transparent;
         align-self: flex-end;

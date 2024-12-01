@@ -1,5 +1,5 @@
 import React from 'react'
-import Style from './index.module.scss'
+import './index.module.scss'
 
 import Layout from '../components/Layout/Layout'
 import Aside from '../components/Aside/Aside'
@@ -15,12 +15,12 @@ function Home({ data }) {
 
   return (
     <>
-      <Layout className={Style.Layout}>
+      <Layout>
         <SEO
           title= 'Portfolio'
           description={data.site.siteMetadata.description}
         />
-        <div className={Style.container}>
+        <div className="container">
           
           <Header />
           

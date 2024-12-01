@@ -1,10 +1,10 @@
-@import'../../styles/variables.scss';
+@use '../../styles/variables.scss';
 
 .footer {
-    background: linear-gradient(180deg, $LGrey 0%, $Grey 90%);
-    @include content(fit-content);
+    background: linear-gradient(180deg, variables.$LGrey 0%, variables.$Grey 90%);
+    @include variables.content(fit-content);
     padding-bottom: 6em;
-    @include margin();
+    @include variables.margin();
 
     h2 {
         padding-top: 1em;
@@ -46,7 +46,7 @@
             input,
             textarea,
             button {
-                color: $DBlue;
+                color: variables.$DBlue;
                 font-weight: 600;
                 box-sizing: border-box;
                 border-radius: 1em;
@@ -70,7 +70,7 @@
             button {
                 font-size: 1em;
                 font-weight: 600;
-                background-color: $Yellow;
+                background-color: variables.$Yellow;
                 margin-top: 1em;
                 padding: .7em 1em;
                 float: right;

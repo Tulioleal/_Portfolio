@@ -1,7 +1,7 @@
-@import '../../styles/variables.scss';
+@use '../../styles/variables.scss';
 
 .img1 {
-    @include img('../../images/header-desk.jpg');
+    // @include img('../../images/header-desk.jpg');
     height: 100vh;
     display: flex;
     flex-direction: column;

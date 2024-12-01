@@ -1,9 +1,18 @@
-@import '../../styles/variables.scss';
+@use '../../styles/variables.scss';
 
 main{
-    @include margin();
-    @include content(fit-content);
-    background: linear-gradient(180deg, $Grey 0%, $LGrey 90%);
+    background: linear-gradient(180deg, #636D7D 0%, #7c8799 90%);
+    min-height: fit-content;
+    background-color: #636D7D;
+    box-shadow: 0 0 20px #333;
+    z-index: 1;
+    padding: 3em 7em;
+    @media screen and ( max-width: 1050px){
+        padding: 3em 4.5em;
+    }
+    @media screen and ( max-width: 440px){
+        padding: 3em;
+    }
 }
 
 .about {
@@ -37,10 +46,10 @@ main{
         .bar {
             z-index: 4;
             position: relative;
-            color: $DBlue;
+            color: #222831;
             height: 3em;
             margin-bottom: calc(1em + 6px);
-            border: 3px solid $DBlue;
+            border: 3px solid #222831;
             display: flex;
 
 
@@ -55,7 +64,7 @@ main{
             .progress {
                 z-index: -1;
                 height: 3em;
-                background-color: $Yellow;
+                background-color: #FFD369;
             }
         }
     }

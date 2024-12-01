@@ -1,11 +1,11 @@
 import React from 'react'
 import Aside from '../Aside/Aside'
-import Styles from './Layout.module.scss'
+import './Layout.module.scss'
 
 function Layout({ children }) {
     return (
-        <div className={Styles.container}>
-            <div className={Styles.aside}>
+        <div className="container">
+            <div className="aside">
                 <Aside />
             </div>
             {children}

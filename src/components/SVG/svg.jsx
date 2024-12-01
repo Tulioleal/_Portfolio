@@ -1,12 +1,12 @@
 import React from 'react'
-import Style from './svg.module.scss'
+import './svg.module.scss'
 
 const SVG = (props) => (
     <a href={props.href} target='_blank' rel="noreferrer">
         <img 
             src={props.src}
             alt={props.alt}
-            className={Style.svg}
+            className="svg"
         />
     </a>
 )
