@@ -23,71 +23,21 @@ main{
 }
 
 .skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     padding: 3em 0em;
 
-    .bars {
-        width: 75%;
-        margin-top: 1em;
-        align-self: center;
+    .skillList {
         display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-
-        .bar {
-            z-index: 4;
-            position: relative;
-            color: variables.$DBlue;
-            height: 3em;
-            margin-bottom: calc(1em + 6px);
-            border: 3px solid variables.$DBlue;
-            display: flex;
-
-
-            p {
-                font-weight: 800;
-                z-index: 4;
-                width: fit-content;
-                margin: .6em;
-                align-self: center;
-            }
-
-            .progress {
-                z-index: -1;
-                height: 3em;
-                background-color: variables.$Yellow;
-            }
-        }
-    }
-
-    $menu-items:
-        (html, 80%),
-        (css, 90%),
-        (js 75%),
-        (ndjs, 65%),
-        (react, 70%);
-
-    @each $id, $width in $menu-items {
-
-        @keyframes width-#{$id} {
-            0% {
-                width: 0%;
-            }
-
-            100% {
-                width: $width;
-            }
-        }
-
-        .#{$id} {
-            
-            .progress {
-                width: $width;
-                animation: width-#{$id} 1.2s ease-out forwards;
-            }
-            @extend .bar;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 0;
+    
+        li {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: variables.$Yellow;
         }
     }
 }
@@ -98,17 +48,6 @@ main{
         p{
             width: 100%;
             font-size: 1.2em;
-        }
-    }
-}
-
-@media screen and (max-width: 600px){
-
-    
-    .skills{
-        
-        .bars {
-            width: 95%;
         }
     }
 }

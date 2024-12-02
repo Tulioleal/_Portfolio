@@ -2,16 +2,6 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 import * as styles from './About.module.scss'
 
-const Bar = (props) => (
-  <Fade>
-    <div className={props.style}>
-      <div className={styles.progress}>
-        <p>{props.title}</p>
-      </div>
-    </div>
-  </Fade>
-)
-
 function About() {
     return (
         <section>
@@ -36,25 +26,26 @@ function About() {
                   <h2>Skills</h2>
                 </Fade>
 
-                <div className={styles.bars}>
-
-                    <Bar
-                      title='CSS'
-                      style={styles.css}
-                    />
-                    <Bar
-                      title='Javascript'
-                      style={styles.js}
-                    />
-                    <Bar
-                      title='NodeJs'
-                      style={styles.ndjs}
-                    />
-                    <Bar
-                      title='React'
-                      style={styles.react}
-                    />
-                  </div>
+                <ul className={styles.skillList}>
+                    <li>
+                      Next.js
+                    </li>
+                    <li>
+                      Typescript
+                    </li>
+                    <li>
+                      Flutter
+                    </li>
+                    <li>
+                      Node.js
+                    </li>
+                    <li>
+                      Express.js
+                    </li>
+                    <li>
+                    Firebase
+                    </li>
+                </ul>
 
             </section>
         </section>
