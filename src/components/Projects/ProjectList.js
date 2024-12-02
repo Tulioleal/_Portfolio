@@ -1,22 +1,27 @@
-import Consul from '../../images/Home1-min.jpg'
-import Splitter from '../../images/Splitter.png'
 import Nggamdu from '../../images/Nggamdu.jpg'
 import MiTiendaOficial from '../../images/mto.jpg'
+import CS_courses from '../../images/CS_courses.png'
+import CS_website from '../../images/CS_website.png'
+import CS_olympiad from '../../images/CS_olympiad.png'
 
 export default {
-    "ConsultorioApp" : {
-        "title" : "ConsultorioApp",
-        "content": "A Single-page application created in 2020, focused in simplicity, developed as a tool for medical history and consultation of gynecologic and obstetric patients.",
-        "href": "https://consultorioapp.herokuapp.com",
-        "repo": "https://github.com/Tulioleal/_AppConsultorio",
-        "img" : Consul,
+    "CS_courses" : {
+        "title" : "ClimateScience Courses",
+        "content": "A platform that offers free courses on climate change, with the aim of educating people on the topic.",
+        "href": "https://climatescience.org/new-courses",
+        "img" : CS_courses,
     },
-    "Splitter" : {
-        "title" : "Splitter",
-        "content": "Splitter is a very simple to use app, created to split bills between you and your friends in a party, reunion or even trip. (Currently you can visualize it only in it's mobile version).",
-        "href": "https://splitter.tulioleal.vercel.app/",
-        "repo": "https://github.com/Tulioleal/_Splitter",
-        "img": Splitter
+    "CS_olympiad" : {
+        "title" : "ClimateScience Olympiad",
+        "content": "An online competition that aims to prove students knowledge on climate change and its effects.",
+        "href": "https://climatescience.org/olympiad",
+        "img": CS_olympiad,
+    },
+    "CS_website" : {
+        "title" : "ClimateScience Website",
+        "content": "The main website of ClimateScience, a non-profit organization that aims to provide free education on climate change.",
+        "href": "https://climatescience.org/",
+        "img" : CS_website,
     },
     "Nggamdu" : {
         "title" : "Nggàm dù",
